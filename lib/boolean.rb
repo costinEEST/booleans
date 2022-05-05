@@ -1,8 +1,3 @@
-# class Project
-#   def initialize
-#   end
-# end
-
 module Boolean
   require "singleton"
   class Error < StandardError; end
