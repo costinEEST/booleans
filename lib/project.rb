@@ -15,8 +15,13 @@ end
 class MyTrue < MyBoolean
   include Boolean
   include Singleton
+
   def not
     MyFalse.instance
+  end
+
+  def my_or(a_boolean)
+    a_boolean
   end
 end
 
