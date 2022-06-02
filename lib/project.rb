@@ -27,7 +27,11 @@ class MyFalse < MyBoolean
     MyTrue.instance
   end
 
-  def my_or(aBoolean)
-    self
+  def my_or(a_boolean)
+    if a_boolean == MyTrue.instance
+      MyTrue.instance
+    else
+      MyFalse.instance
+    end
   end
 end
