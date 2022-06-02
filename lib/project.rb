@@ -20,8 +20,8 @@ class MyTrue < MyBoolean
     MyFalse.instance
   end
 
-  def my_or(a_boolean)
-    a_boolean
+  def my_or(_a_boolean)
+    self
   end
 end
 

@@ -32,4 +32,10 @@ class ProjectTest < ActiveSupport::TestCase
     my_true = MyTrue.instance
     assert_equal my_true.my_or(my_true), my_true
   end
+
+  def test_my_true_or_my_false_is_my_true
+    my_true = MyTrue.instance
+    my_false = MyFalse.instance
+    assert_equal my_true.my_or(my_false), my_true
+  end
 end
