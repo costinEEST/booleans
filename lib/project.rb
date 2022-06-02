@@ -26,4 +26,8 @@ class MyFalse < MyBoolean
   def not
     MyTrue.instance
   end
+
+  def my_or(aBoolean)
+    self
+  end
 end
