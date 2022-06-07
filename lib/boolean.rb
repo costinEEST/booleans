@@ -40,6 +40,6 @@ class MyFalse < MyBoolean
   end
 
   def if_false
-    "I am expected"
+    yield
   end
 end
