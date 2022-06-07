@@ -18,6 +18,10 @@ class MyTrue < MyBoolean
   def my_or(_a_boolean)
     self
   end
+
+  def my_and(a_boolean)
+    a_boolean
+  end
 end
 
 class MyFalse < MyBoolean
