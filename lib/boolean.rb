@@ -36,6 +36,6 @@ class MyFalse < MyBoolean
   end
 
   def my_and(a_boolean)
-    MyFalse.instance
+    self
   end
 end
