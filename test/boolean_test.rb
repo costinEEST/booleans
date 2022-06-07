@@ -1,14 +1,7 @@
 require "test_helper"
-require "project"
+require "boolean"
 
 class ProjectTest < ActiveSupport::TestCase
-  # test "example" do
-  #   assert true, "Example passes, tests are executing correctly"
-  # end
-  # def test_that_it_has_a_version_number
-  #   refute_nil ::Boolean::VERSION
-  # end
-
   def test_false_negated_is_true_and_viceversa
     my_false = MyFalse.instance
     my_true = MyTrue.instance
