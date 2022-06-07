@@ -38,4 +38,8 @@ class MyFalse < MyBoolean
   def my_and(a_boolean)
     self
   end
+
+  def if_false
+    "I am expected"
+  end
 end
