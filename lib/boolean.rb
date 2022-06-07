@@ -42,4 +42,8 @@ class MyFalse < MyBoolean
   def if_false
     yield
   end
+
+  def if_true
+    nil
+  end
 end

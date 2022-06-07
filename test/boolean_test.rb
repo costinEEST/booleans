@@ -54,9 +54,15 @@ class ProjectTest < ActiveSupport::TestCase
     assert_equal my_true.my_and(my_false), my_false
   end
 
-  def test_my_false_if_false_executes_its_block
+  def test_my_false_if_false_evaluates_its_block
     my_false = MyFalse.instance
     expected = "I am expected"
-    assert my_false.if_false { expected }, expected
+    assert_equal my_false.if_false { expected }, expected
+  end
+
+  def test_my_false_if_true_does_not_evaluate_its_block
+    my_false = MyFalse.instance
+    expected = "I am expected"
+    assert_nil(my_false.if_true { expected })
   end
 end
