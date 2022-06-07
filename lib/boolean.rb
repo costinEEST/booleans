@@ -30,4 +30,8 @@ class MyFalse < MyBoolean
   def my_or(a_boolean)
     a_boolean
   end
+
+  def my_and(a_boolean)
+    MyFalse.instance
+  end
 end

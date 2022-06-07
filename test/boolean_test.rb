@@ -31,4 +31,9 @@ class ProjectTest < ActiveSupport::TestCase
     my_false = MyFalse.instance
     assert_equal my_true.my_or(my_false), my_true
   end
+
+  def test_my_false_and_my_false_is_my_false
+    my_false = MyFalse.instance
+    assert_equal my_false.my_and(my_false), my_false
+  end
 end
