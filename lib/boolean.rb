@@ -22,6 +22,10 @@ class MyTrue < MyBoolean
   def my_and(a_boolean)
     a_boolean
   end
+
+  def if_true
+    yield
+  end
 end
 
 class MyFalse < MyBoolean

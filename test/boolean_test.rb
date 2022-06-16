@@ -65,4 +65,10 @@ class ProjectTest < ActiveSupport::TestCase
     expected = "I am expected"
     assert_nil(my_false.if_true { expected })
   end
+
+  def test_my_true_if_true_evaluates_its_block
+    my_true = MyTrue.instance
+    expected = "I am expected"
+    assert_equal my_true.if_true { expected }, expected
+  end
 end
