@@ -4,7 +4,7 @@ type: ruby
 
 up:
   - ruby:
-      version: 3.1.0
+      version: 3.1.2
       gems:
         - solargraph
   - bundler:
