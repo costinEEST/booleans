@@ -71,4 +71,10 @@ class ProjectTest < ActiveSupport::TestCase
     expected = "I am expected"
     assert_equal my_true.if_true { expected }, expected
   end
+
+  def test_my_true_if_false_does_not_evaluate_its_block
+    my_true = MyTrue.instance
+    unexpected = "I am not expected"
+    assert_nil(my_true.if_false { unexpected })
+  end
 end
